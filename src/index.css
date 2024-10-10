@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --azul-base: #095fc2;
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--azul-base);
+    font-family: "New Amsterdam", system-ui;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: azure;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+form input {
+    font-size: 30px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+form input:focus {
+    outline: 1px solid var(--azul-base);
+}
+
+.botão-enviar {
+    border: none;
+    background: #095fc2;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 500;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.botão-enviar:hover {
+    background: #0850a1;
+}
+
+.botão-enviar:active{
+    background: #0870a1;
+}
+
+.paragrafo-resultado {
+    background: greenyellow;
+    padding: 10px 20px;
+}
+
+.bad {
+    background: red;
+    padding: 10px 20px;
+}
