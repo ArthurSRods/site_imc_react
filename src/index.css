@@ -51,6 +51,7 @@ form input:focus {
 }
 
 .botão-enviar {
+    font-family: "New Amsterdam", system-ui;
     border: none;
     background: #095fc2;
     color: aliceblue;
