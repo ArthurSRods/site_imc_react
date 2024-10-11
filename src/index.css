@@ -73,10 +73,12 @@ form input:focus {
 
 .paragrafo-resultado {
     background: greenyellow;
+    border-radius: 5px;
     padding: 10px 20px;
 }
 
 .bad {
     background: red;
+    border-radius: 5px;
     padding: 10px 20px;
 }

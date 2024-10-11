@@ -23,7 +23,7 @@ const CalculadoraIMC = () => {
     if (imc >= 29.9) return nivel[3];
     if (imc >= 24.9) return nivel[2];
     if (imc >= 18.5) return nivel[1];
-    return nivel[0];
+    if (imc < 18.5) return nivel[0];
   };
 
   // Função para lidar com a submissão do formulário
@@ -38,7 +38,17 @@ const CalculadoraIMC = () => {
       return;
     }
 
+    if (pesoNum>400) {
+      setResultado('Peso inválido');
+      return;
+    }
+
     if (!alturaNum) {
+      setResultado('Altura inválida');
+      return;
+    }
+
+    if (alturaNum>4) {
       setResultado('Altura inválida');
       return;
     }
@@ -79,7 +89,7 @@ const CalculadoraIMC = () => {
       </form>
       <div id="resultado">
         {resultado && (
-          <p className={resultado.includes('inválido') ? 'bad' : 'paragrafo-resultado'}>
+          <p className={resultado.includes('inválido') || resultado.includes('inválida') ? 'bad' : 'paragrafo-resultado'}>
             {resultado}
           </p>
         )}
